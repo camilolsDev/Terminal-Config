@@ -4,8 +4,7 @@ This project is my personal  terminal configuration  of Windows PowerShell
 ## install Nerd Font
 ```powershell
 Install-PSResource -Name NerdFonts
-Import-Module -Name NerdFonts
-Install-NerdFont -Name FiraCode -Scope AllUsers
+ Install-Module -Name NerdFonts -Scope CurrentUser
 ```
 
 ```powershell
