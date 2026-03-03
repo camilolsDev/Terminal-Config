@@ -14,11 +14,16 @@ Install-NerdFont -Name # to specific font
 ```powershell
 Install-NerdFont -All
 ```
+## Intsall Icons
+
+```powershell
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
 ## Install OhMyPosh 
 ```powershell
 winget install JanDeDobbeleer.OhMyPosh --source winget
 ```
--Edit your PowerShell profile script, you can find its location under the $PROFILE variable in your preferred PowerShell version. For example, using notepad:
+- Edit your PowerShell profile script, you can find its location under the $PROFILE variable in your preferred PowerShell version. For example, using notepad:
 
 ```powershell
 notepad $PROFILE
