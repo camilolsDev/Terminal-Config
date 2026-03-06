@@ -6,7 +6,7 @@ This project is my personal  terminal configuration PowerShell 7.5.4
 Install-PSResource -Name NerdFonts
 Import-Module -Name NerdFonts
 ```
-- to install specific font. You can see all font here https://www.nerdfonts.com/font-downloads
+- to install specific font. You can see all font here https://www.nerdfonts.com/font-downloads (Gohu)
 ```powershell
 Install-NerdFont -Name # to specific font
 ```
