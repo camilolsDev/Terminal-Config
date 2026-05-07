@@ -10,3 +10,6 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+# nt to create a new tab of current directory in Windows Terminal
+function nt { wt -w 0 new-tab -d . }
