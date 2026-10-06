@@ -48,6 +48,10 @@
           "type": "python",
           "style": "plain",
           "foreground": "#45F1C2",
+           "properties": {
+            "display_mode": "environment",
+            "fetch_virtual_env": true
+          },
           "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}(.Venv){{ end }}{{ end }}"
         },
         {
