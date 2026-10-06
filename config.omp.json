@@ -34,25 +34,26 @@
       "type": "prompt"
     },
     {
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#45F1C2",
+          "template": "{{ if .Env.CONDA_DEFAULT_ENV }}\ue73c ({{ .Env.CONDA_DEFAULT_ENV }}){{ end }}{{ if .Env.VIRTUAL_ENV }}\ue73c ({{ base .Env.VIRTUAL_ENV }}){{ end }}"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
       "alignment": "left",
       "newline": true,
       "segments": [
-       
         {
           "foreground": "#cd5e42",
           "style": "plain",
           "template": "\ue3bf ",
           "type": "root"
-        },
-         {
-          "type": "python",
-          "style": "plain",
-          "foreground": "#45F1C2",
-           "properties": {
-            "display_mode": "environment",
-            "fetch_virtual_env": true
-          },
-          "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{.Venv}}){{ end }}{{ end }}"
         },
         {
           "foreground": "#CD4277",
