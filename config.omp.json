@@ -48,7 +48,7 @@
           "type": "python",
           "style": "plain",
           "foreground": "#45F1C2",
-          "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}(env){{ end }}{{ end }}"
+          "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}(.Venv){{ end }}{{ end }}"
         },
         {
           "foreground": "#CD4277",
