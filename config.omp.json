@@ -52,7 +52,7 @@
             "display_mode": "environment",
             "fetch_virtual_env": true
           },
-          "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}(.Venv){{ end }}{{ end }}"
+          "template": " \ue73c {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}({{.Venv}}){{ end }}{{ end }}"
         },
         {
           "foreground": "#CD4277",
